@@ -48,7 +48,7 @@ cout<<"divisible by only 3"<<endl;
 
 else
 {
-    
+
 cout<<"divisible by none"<<endl;
 }
 }
