@@ -7,6 +7,15 @@
 // ++                    Incrementer                                  A++ = 6
 // --                    Decrementer                                  A-- = 4
 
+
+
+// Arithmetic operators perform some arithmetic operation on one or two
+// operands. Operators that operate on one operand are called unary
+// arithmetic operators and operators that operate on two operands are
+// called binary arithmetic operators.
+// +,-,*,/,% are binary operators.
+// ++, -- are unary operators.
+
 #include<iostream>
 using namespace std;
 int main()
