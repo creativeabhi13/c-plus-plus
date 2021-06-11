@@ -6,13 +6,18 @@
 // >=         Gives true if left operand is more than right operand or equal to it     A>=B is not true
 // <=             Gives true if left operand is more than right operand or equal to it  A<=B is true
 
+// Relational operators define the relation between 2 entities.
+// They give a boolean value as result i.e true or false.
+// Suppose : A=5 and B=10
+// //     We need to write a program which prints if a number is more than 10,
+// // equal to 10 or less than 10. This could be done using relational operators
+// // with if else statements.
+
 #include<iostream>
 using namespace std;
 int main()
 {
-//     We need to write a program which prints if a number is more than 10,
-// equal to 10 or less than 10. This could be done using relational operators
-// with if else statements.
+
 int n;
 cin>>n;
 if(n<10){
