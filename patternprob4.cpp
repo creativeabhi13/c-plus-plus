@@ -6,7 +6,7 @@
       ****
      *****
     ****** */
-  #include<iostream>
+  /* #include<iostream>
   using namespace std;
   int main()
   {
@@ -29,3 +29,20 @@
          cout<<endl;
      }
   }
+ */
+
+
+
+
+ /* Print Half Pyramid using numbers
+
+ 1
+ 1 2
+ 1 2 3
+ 1 2 3 4
+ 1 2 3 4 5  
+ */
+
+
+
+ 
