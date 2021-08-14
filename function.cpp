@@ -64,7 +64,7 @@ int main()
 } */
 
 // fibenacci series - the number which is the sum of the two previous number .
-#include <iostream>
+/* #include <iostream>
 using namespace std;
 void fab(int n)
 {
@@ -75,6 +75,7 @@ void fab(int n)
     {
         cout << t1 << endl;
         nextterm = t1 + t2;
+        t1 = t2;
         t2 = nextterm;
     }
     return;
@@ -84,5 +85,85 @@ int main()
     int n;
     cin >> n;
     fab(n);
+    return 0;
+}
+
+ */
+
+//a  factorial is a number which is multiply wih all its lesser number.
+// 5!=5*4*3*3*2*1=120
+/* #include <iostream>
+using namespace std;
+
+int fact(int n)
+{
+    int factorial = 1;
+    for (int i = 2; i <= n; i++)
+    {
+        factorial *= i;
+    }
+    return factorial;
+}
+int main()
+{
+    int n;
+    cin >> n;
+    int ans = fact(n);
+    cout << ans << endl;
+} */
+
+// calculate ncr=n!/(n-r)!*r!
+
+/* #include <iostream>
+using namespace std;
+int fact(int n)
+{
+    int factorial = 1;
+    for (int i = 2; i <= n; i++)
+    {
+        factorial *= i;
+    }
+    return factorial;
+}
+int main()
+{
+    int n;
+    int r;
+    cin >> n >> r;
+
+    int ans = (fact(n)) / (fact(n - r) * r);
+    cout << ans << endl;
+    return 0;
+} */
+
+// pascal traingle
+/* 1
+1 2 1
+1 3 3 1
+1 4 6 4 1 */
+
+#include <iostream>
+using namespace std;
+int fact(int n)
+{
+    int factorial = 1;
+    for (int i = 2; i <= n; i++)
+    {
+        factorial *= i;
+    }
+    return factorial;
+}
+int main()
+{
+    int n;
+    for (int i = 0; i <= n; i++)
+    {
+        for (int j = 0; j <= i; j++)
+        {
+            // icj=i!/J*(i-j)!
+            cout << fact(i) / (fact(i - j) * fact(j)) << " " << endl;
+        }
+        cout << endl;
+    }
     return 0;
 }
