@@ -10,18 +10,17 @@ ex -
 using namespace std;
 int main()
 {
-    int array[4]  = {10, 20, 30, 40} ;
+    int array[4] = {10, 20, 30, 40};
     array[0] = 10;
     array[1] = 20;
     array[2] = 30;
     array[3] = 40;
 
-    cout << array[2] << endl;
-    return 0;
+cout << array[2] << endl;
 } */
 
 // how to take input from the user
-#include <iostream>
+/* #include <iostream>
 using namespace std;
 int main()
 {
@@ -36,4 +35,37 @@ int main()
     {
         cout << array[i] << endl;
     }
+} */
+
+/* print max number and min number  */
+
+#include <climits>
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin >> n;
+    int arr[n];
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
+    int maxno = INT_MIN;
+    int minno = INT_MAX;
+    for (int i = 0; i < n; i++)
+    {
+        maxno = max(maxno, arr[i]);
+        if (arr[i] > maxno)
+        {
+            maxno = arr[i];
+        }
+        minno = min(minno, arr[i]);
+        if (arr[i] < minno)
+        {
+            minno = arr[i];
+        }
+    }
+    cout << maxno << endl;
+    cout << minno << endl;
 }
