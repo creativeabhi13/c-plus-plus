@@ -19,7 +19,7 @@ int main()
     {
         for (int j = 0; j < m; j++)
         {
-            cout << a[i][j];
+            cout << a[i][j] << endl;
         }
         cout << " ";
     }
