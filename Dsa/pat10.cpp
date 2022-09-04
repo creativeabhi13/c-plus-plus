@@ -5,54 +5,50 @@ col->4
 but printing col->row
 so try to print number of star equal to row
 1
-2 3
-3 4 5
-4 5 6 7
+2 1
+3 2 1
+4 3 2 1
+5 4 3 2 1
 
 
 */
-
 /* #include <iostream>
 using namespace std;
 int main()
 {
     int num;
-    cout << "Enter the number" << endl;
+    cout << "Enter the number of the row" << endl;
     cin >> num;
-
     int row = 1;
-
     while (row <= num)
     {
         int col = 1;
-        int value = row;
+        int val = row;
         while (col <= row)
         {
-            cout << " " << value << " ";
-            value++;
+            cout << val << " ";
+            val--;
             col++;
         }
         cout << endl;
         row++;
     }
-}
-
- */
+} */
 
 #include <iostream>
 using namespace std;
 int main()
 {
     int num;
-    cout << "Enter the number of rows" << endl;
+    cout << "Enter the number of the rows" << endl;
     cin >> num;
     int row = 1;
     while (row <= num)
     {
-        int col = row;
-        while (col < row * 2)
+        int col = 1;
+        while (col <= row)
         {
-            cout << col << " ";
+            cout << row - col + 1 << " ";
             col++;
         }
         cout << endl;
