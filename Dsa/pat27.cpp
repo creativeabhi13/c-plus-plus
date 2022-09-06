@@ -18,9 +18,10 @@ print
 val++;
 
 // 2nd traingle
-col-row num
-print col
-col++
+star=1
+star<(row-1)*2
+print *
+star++
 
 // 3rd traingle
 int start=num-row-1
@@ -55,11 +56,11 @@ int main()
             col++;
         }
         // space -2nd triangle triangle
-        int space = 1;
-        while (space <= (row - 1) * 2)
+        int star = 1;
+        while (star <= (row - 1) * 2)
         {
             cout << "* ";
-            space++;
+            star++;
         }
 
         // 3rd taingle
