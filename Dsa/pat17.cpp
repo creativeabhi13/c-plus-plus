@@ -5,9 +5,10 @@ col->3
 but printing col->row
 so try to print number of star equal to row
 
-A B C
-B C D
+A
+B C
 C D E
+D E F G
 
 i+j-1=1
 add 'A'-1 both side
@@ -16,7 +17,7 @@ i+j+'A'-2='A'
 
 */
 
-/* #include <iostream>
+#include <iostream>
 using namespace std;
 int main()
 {
@@ -28,7 +29,7 @@ int main()
     while (row <= num)
     {
         int col = 1;
-        while (col <= num)
+        while (col <= row)
         {
             char ch = 'A' + row + col - 2;
             cout << ch << " ";
@@ -37,24 +38,5 @@ int main()
         }
         cout << endl;
         row++;
-    }
-} */
-
-#include <iostream>
-using namespace std;
-int main()
-{
-    int num;
-    cout << "Enter the number" << endl;
-    cin >> num;
-    for (int row = 1; row <= num; row++)
-    {
-        char start = 'A' + row - 1;
-        for (int col = 1; col <= num; col++)
-        {
-            cout << start;
-            start++;
-        }
-        cout << endl;
     }
 }
