@@ -24,7 +24,7 @@ print *
 star++
 
 // 3rd traingle
-int start=num-row-1
+int start=num-row+1
 start>=1
 print start
 start--;
