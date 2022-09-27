@@ -22,6 +22,7 @@ int max(int arr[], int size)
 
     for (int i = 0; i < size; i++)
     {
+        // maxi=max(maxi,arr[i])
         if (arr[i] > max)
         {
             max = arr[i];
