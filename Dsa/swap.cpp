@@ -1,18 +1,23 @@
 /*
 Swap alternate element in the array
+1 2 3 4 5
+2 1 4 3 5
+
+1 2 3 4 5 6
+2 1 4 3 6 5
 */
 
 #include <iostream>
 using namespace std;
 void swapalternate(int arr[], int size)
 {
-    int start = 0;
-
-    while (start <= size - 1)
+    for (int i = 0; i < size; i += 2)
     {
-        swap(arr[start], arr[start + 2]);
-        start++;
+        if (i + 1 < size)
+        {
+            swap(arr[i], arr[i + 1]);
         }
+    }
 }
 void printarray(int arr[], int size)
 {
