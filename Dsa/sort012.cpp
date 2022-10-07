@@ -10,25 +10,37 @@ void printarray(int arr[], int size)
 }
 void sort_Zero_One_two(int arr[], int n)
 {
-
-    int left = 0, right = n - 1;
-    while (left < right)
+    int c1 = 0, c2 = 0, c3 = 0;
+    for (int i = 0; i < n; i++)
     {
+        if (arr[i] == 0)
+        {
+            c1++;
+        }
 
-        while (arr[left] == 0 && left < right)
+        else if (arr[i] == 1)
         {
-            left++;
+            c2++;
         }
-        while (arr[right] == 1 && left < right)
+        else
         {
-            right--;
+            c3++;
         }
-        if (left < right)
-        {
-            swap(arr[left], arr[right]);
-            left++;
-            right--;
-        }
+    }
+    int i = 0;
+    for (; i < c1; i++)
+    {
+        arr[i] = 0;
+    }
+
+    for (; i < c1 + c2; i++)
+    {
+        arr[i] = 1;
+    }
+
+    for (; i < c1 + c2 + c3; i++)
+    {
+        arr[i] = 2;
     }
 }
 
