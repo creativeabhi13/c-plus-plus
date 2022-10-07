@@ -1,6 +1,7 @@
 /*
 
 Linear search
+o(n)
 */
 #include <iostream>
 bool search(int arr[], int size, int key)
