@@ -7,7 +7,7 @@ r3->i=3    7  8    9
 take variable starting from 1 and just print it while increasing it
 
 */
-
+/*
 #include <iostream>
 using namespace std;
 int main()
@@ -28,5 +28,26 @@ int main()
         }
         cout << endl;
         i++;
+    }
+} */
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int rows;
+    cout << "Enter the number of rows" << endl;
+    cin >> rows;
+    int count = 1;
+
+    for (int pat = 1; pat <= rows; pat++)
+    {
+
+        for (int pat1 = 1; pat1 <= rows; pat1++)
+        {
+            cout << count;
+            count++;
+        }
+        cout << endl;
     }
 }
