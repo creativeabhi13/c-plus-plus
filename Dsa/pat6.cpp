@@ -11,7 +11,7 @@ so try to print number of star equal to row
 
 
 */
-#include <iostream>
+/* #include <iostream>
 using namespace std;
 int main()
 {
@@ -32,5 +32,24 @@ int main()
         }
         cout << endl;
         row++;
+    }
+} */
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int rows;
+    cout << "Enter the number of rows" << endl;
+    cin >> rows;
+
+    for (int pat = 1; pat <= rows; pat++)
+    {
+
+        for (int pat1 = 1; pat1 <= pat; pat1++)
+        {
+            cout << " * ";
+        }
+        cout << endl;
     }
 }
